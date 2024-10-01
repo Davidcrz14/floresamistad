@@ -11,7 +11,7 @@ body, html {
 
 .overlay {
     position: absolute;
-    top: 0;
+    top: 10%; /* Cambiado de 0 a 10% para que aparezca más arriba */
     left: 0;
     width: 100%;
     padding-top: 20px;
@@ -19,6 +19,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: opacity 1s ease; /* Añadido para una transición suave */
 }
 
 #jardin-canvas {
